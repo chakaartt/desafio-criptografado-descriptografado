@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"><!--ligação css-->
+   <script type="text/javascript" src="/copia.js"></script><!--ligação javascript-->
+    
+    
+    
+    <title>Site Decodificado</title>
+</head>
+<body>
+    <header>
+        <!----imagem do logo tipo da alura-->
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo da alura no inicio">
+        </div>
+       
+    </header>
+    <main>
+        <section>
+                    <!-- primeira caixa de texto -->
+                <textarea class ="input-texto" id="" cols="40" rows="6" placeholder="Digite seu texto "></textarea>
+                <input type="hidden" class="botao-escodido">
+                
+                <div>
+                    <h6 class="informacao">Apenas letras maisúculas e menúsculas</h6>
+                </div>
+                 <!---- botões -->  
+                <div class="botoes">
+                    <button class="encriptar" onclick="btnEncriptar()">
+                        criptografar
+                    </button>
+
+                    <button class="desencriptar" onclick="btnDesencriptar()">
+                        descriptografar
+                    </button>
+                </div>
+
+        </section>
+
+        <section>
+            
+            <textarea class="mensagem" cols="18" rows="10"></textarea>
+
+           
+            <button class="copia" onclick="btnCopiar()">
+                Copia
+            </button>
+          
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
